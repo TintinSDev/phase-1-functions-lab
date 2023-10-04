@@ -1,20 +1,10 @@
 // Code your solution in this file!
 function distanceFromHqInBlocks(someValue) { 
-    return distanceFromHqInBlocks(someValue)-42;
-}
-function distanceFromHqInBlocks(someValue) { 
-    let Scuber = 42;
-    let client = 43;
-    const distanceInBlocks = client - Scuber;
-    return distanceInBlocks;
+  const hq = 42;
+  const blocks = Math.abs(hq - someValue);
+  return blocks;
 }
 
-function distanceFromHqInBlocks(distance) { 
-    let Scuber = 42;
-    let client = 50;
-    const distanceFromHqInBlocks = client - Scuber;
-    return distanceFromHqInBlocks;
-}
 
   function distanceFromHqInFeet (someValue) {
     return distanceFromHqInBlocks(someValue)*264;
@@ -22,11 +12,7 @@ function distanceFromHqInBlocks(distance) {
   }
   
   function distanceTravelledInFeet(a,b){
-    if (b>a){
-      return((b-a)*264);
-    }
-    else
-      return((a-b)*264);
+    return Math.abs(a - b) * 264;
   }
   
   
